@@ -1,0 +1,64 @@
+<div class="container" ng-controller="menuController">
+            <h4 class="text-center m-4 ">Menu</h4 class="text">
+
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Name</th>
+
+                <th>action</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="menu in menus">
+                <td>{{$index + 1}}</td>
+                <td>{{menu.name}}</td>
+
+
+                <td width="200">
+                    <button class="btn btn-danger" ng-click="removemenu(menu.id)">Remove</button>
+                    <a href="#!menu/{{menu.id}}/edit" class="btn btn-primary">Update</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <form ng-submit="addmenu($event)">
+        <h4 class="text-center m-4 ">Add menu</h4 class="text">
+
+        <div class="row">
+
+            <div class=" col-6 mb-4">
+                <label for="name" class="label-control">menuID</label>
+                <input type="text" class="form-control" placeholder="menu Name" ng-model="menu.id" />
+            </div>
+            <div class="col-6 mb-4">
+                <label for="name" class="label-control">menu name</label>
+                <input type="text" class="form-control" placeholder="menu name" ng-model="menu.name" />
+            </div>
+        </div>
+
+        <button class="btn btn-primary">Add</button>
+
+    </form>
+    <form ng-submit="updateItem($event)">
+        <h4 class="text-center m-4 ">Update menu</h4 class="text">
+
+        <div class="row">
+
+            <div class=" col-6 mb-4">
+                <label for="name" class="label-control">menuID</label>
+                <input type="text" class="form-control" placeholder="menu Name" ng-model="menu.id" />
+            </div>
+            <div class="col-6 mb-4">
+                <label for="name" class="label-control">menu name</label>
+                <input type="text" class="form-control" placeholder="menu name" ng-model="menu.name" />
+            </div>
+        </div>
+
+        <button class="btn btn-primary">Update</button>
+
+    </form>
+
+</div>

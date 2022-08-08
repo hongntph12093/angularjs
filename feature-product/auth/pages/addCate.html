@@ -1,0 +1,33 @@
+<div class="container">
+    <form ng-submit="addItem($event)">
+        <h4 class="text-center m-4 ">Thêm sản phẩm</h4 class="text">
+
+        <div class="row">
+
+            <div class=" col-6 mb-4">
+                <label for="name" class="label-control">Product Name</label>
+                <input type="text" class="form-control" placeholder="Product Name" ng-model="product.name" />
+            </div>
+            <div class="col-6 mb-4">
+                <label for="name" class="label-control">Product Price</label>
+                <input type="text" class="form-control" placeholder="Product price" ng-model="product.price" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6 mb-4">
+                <label for="name" class="label-control">Product quantity</label>
+                <input type="text" class="form-control" placeholder="Product quantity" ng-model="product.quantity" />
+            </div>
+            <div class="col-6 mb-4" ng-controller="cateController">
+                <label for="singleSelect">Category: </label><br>
+                <select name="singleSelect" ng-model="product.cateId" class="col-12" style="height: 35px;">
+                    <option ng-repeat="cate in cates" value="cate.id"  ng-model="cate.id" >{{cate.name}}</option>
+                </select>
+            </div>
+        </div>
+        
+        <button class="btn btn-primary">Theem</button>
+
+    </form>
+   
+</div>

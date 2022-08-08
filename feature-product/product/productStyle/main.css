@@ -1,0 +1,316 @@
+:root {
+    --color-primary: #0B0B0B;
+    --font-primary: 'Roboto', sans-serif;
+}
+
+body {
+    font-family: var(--font-primary);
+    color: #000;
+    margin: 0 auto;
+}
+.btn{
+    border-radius: 0;
+}
+
+.header-wrapper {
+    background: #F1F1F1;
+}
+.logo{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+.main-menu .navbar-nav .nav-link {
+    padding: 15px 20px;
+}
+
+/*account*/
+.account__link {
+    display: inline-block;
+    margin: 0 10px;
+    color: var(--color-primary)
+}
+
+.account__icon {
+    margin-right: 5px;
+}
+
+/* banner */
+.banner {
+    padding: 70px 0px;
+}
+
+.banner__title {
+    font-size: 74px;
+    font-weight: 300;
+    line-height: 150px;
+}
+
+.banner__description {
+    font-size: 30px;
+    line-height: 55px;
+    color: #000;
+}
+
+.banner__btn {
+    font-size: 29px;
+    border-radius: 0;
+}
+.brands{
+    padding: 30px 0;
+}
+/* feature product*/
+.feature-product .container{
+    position:relative;
+} 
+.feature-product-explore{
+    font-size: 34px;
+    text-transform: uppercase;
+    position: absolute;
+    top: 48%;
+    left: -300px;
+    transform: rotate(-90deg);
+    z-index: 999;
+}
+/*product item*/
+.product-image{
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 23px;
+}
+.product-image:hover .product__info{
+    bottom:0;
+}
+.product__info{
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    right: 0;
+    background: var(--color-primary);
+    color: #fff;
+    transition: ease-in-out 0.3s;
+}
+.product__insta{
+    height: 100%;
+    opacity: 0.8;
+}
+.section-header{
+    padding: 80px;
+}
+.section-header__title{
+    font-size: 45px;
+    font-weight: 500;
+    text-align: center;
+    color: #000;
+}
+.block-filter{
+    padding: 15px 0;
+}
+.block-filter__item:first-child .block-filter__link{
+    padding-left: 0;
+
+    
+}
+.block-filter__link
+{
+    color:#777;
+}
+.block-filter--active{
+    color: #000;
+}
+.product__name{
+    font-size: 24px;
+    font-weight:600;
+    text-decoration: none;
+    color: #000;
+}
+.product-meta{
+    padding: 10px 0;
+}
+.product__category{
+    font-size: 16px;
+    color:#777;
+    text-decoration: none;
+}
+.product__price{
+    font-size: 16px;
+}
+.product__sale{
+    position: absolute;
+    top: 20px;
+    left: 0;
+    background-color: #000;
+    color: #fff;
+    padding: 3px 10px;
+}
+.product__price-old{
+    text-decoration: line-through;
+    margin-right: 10px;
+    color: #777;
+}
+.banner__description{
+    color: #000;
+}
+.product__price-new {
+    color: #FF6F61;
+}
+.brand-banner{
+    background-image: url('./upload/andrey-zvyagintsev-EQj1ZMpq_VM-unsplash 1.png') ;
+    background-size:cover;
+    background-repeat: no-repeat;
+    height: 650px;
+    margin-top: 100px;
+   
+}/*
+.logo{
+    position: relative;
+   
+}
+.brand-banner__content .col-12{
+    position: absolute;
+    left: 50%;
+    top:70%;
+}
+.logo1{
+    position: absolute;
+    top: 90%;
+    left: 20%;
+}
+.logo2 {
+    position: absolute;
+    top: 10%;
+        left: 25%;
+}*/
+.social__item-container{display: flex;
+    justify-content: center;}
+    .social__item{
+        margin: 0px 10px;
+    }
+.banner__description_zaza{
+    color: #fff;
+    font-size: 26px;
+    font-weight: 400;
+    font-family: 'roboto';
+}.brand__btn{
+    font-size: 29px;font-weight: 400;
+}/*footer*/
+footer {
+    background-image: url(./image1/footer.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+    margin: 0;
+    width: 100%;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.main-foot {
+    font-family: unseen;
+    margin-top: 20px;
+    overflow: hidden;
+    padding: 15px 1px 28px 20px;
+
+
+}
+
+
+.footer_box h3 {
+    text-transform: uppercase;
+    font-size: 40px;
+}
+
+.bottom-foot {
+
+    padding: 20px 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.foot-socials ul {
+    font-size: 0;
+    list-style: outside none none;
+    padding: 0;
+    margin: 0;
+}
+
+.foot-socials ul li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.bottom-foot p {
+    margin: 0;
+    font-size: 30px;
+    font-family: unseen;
+    font-weight: 400;
+    color: #0065c3;
+    line-height: 160%;
+    letter-spacing: 1.5px;
+    padding-top: 10px;
+}
+
+.social {
+    display: flex;
+    flex-direction: column;
+background-color:#F1F1F1;
+margin-top: 100px;
+padding-bottom: 50px;
+}
+.social__input{
+    border: none;
+border-bottom: 2px solid #777;
+background-color: #F1F1F1;
+width: 400px;
+margin-right: 10px;
+}
+.social__button {
+    border: none;
+    border-bottom: 2px solid #777;
+    background-color: #F1F1F1;
+    width: 80px;
+}
+.social__title-container {
+    height: 80px;
+    text-align: center;
+    padding-top: 10px;
+    font-family: bombing;
+    font-size: xx-large;
+}
+
+.social__item-container {
+    display: flex;
+    width: 90%;
+}
+h1{
+    color: #000;
+}
+h3 {
+    color: #000;
+}
+.footer__end{
+    background-color:#1E2832;
+    height: 52px;
+}
+.footer__end p{
+line-height: 52px;
+color: #fff;}
+/*logo zaza*/
+.logo__zaza{
+    position: relative;
+}
+.logo1{
+position: absolute;
+left: 70%;
+top: 20px;
+}
+.logo2{
+    position: absolute;
+        left: 65%;
+        top: 120px;
+}
+.content__zaza{
+    
+       padding-left: 65%;
+        padding-top: 200px;
+}

@@ -1,0 +1,64 @@
+<div class="container" ng-controller="cateController">
+            <h4 class="text-center m-4 ">Category</h4 class="text">
+
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Name</th>
+
+                <th>action</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="cate in cates">
+                <td>{{$index + 1}}</td>
+                <td>{{cate.name}}</td>
+
+
+                <td width="200">
+                    <button class="btn btn-danger" ng-click="removeCate(cate.id)">Remove</button>
+                    <a href="#!cate/{{cate.id}}/edit" class="btn btn-primary">Update</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <form  ng-submit="addCate($event)" >
+        <h4 class="text-center m-4 ">Add Cate</h4 class="text">
+
+        <div class="row">
+
+            <div class=" col-6 mb-4">
+                <label for="name" class="label-control">cateID</label>
+                <input type="text" class="form-control" placeholder="cate Name" ng-model="cate.id" />
+            </div>
+            <div class="col-6 mb-4">
+                <label for="name" class="label-control">cate name</label>
+                <input type="text" class="form-control" placeholder="cate name" ng-model="cate.name" />
+            </div>
+        </div>
+
+        <button  class="btn btn-primary">Add</button>
+
+    </form>
+    <form ng-submit="updateItem($event)">
+        <h4 class="text-center m-4 ">Update Cate</h4 class="text">
+    
+        <div class="row">
+    
+            <div class=" col-6 mb-4">
+                <label for="name" class="label-control">cateID</label>
+                <input type="text" class="form-control" placeholder="cate Name" ng-model="cate.id" />
+            </div>
+            <div class="col-6 mb-4">
+                <label for="name" class="label-control">cate name</label>
+                <input type="text" class="form-control" placeholder="cate name" ng-model="cate.name" />
+            </div>
+        </div>
+    
+        <button class="btn btn-primary">Update</button>
+    
+    </form>
+
+</div>
